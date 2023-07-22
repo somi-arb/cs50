@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 81.25%;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 13px 30px;
+  align-items: center;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 81.25%;
+}
+
+.header a {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  text-decoration: inherit;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__link {
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  margin-top: 50px;
+  text-align: center
+}
+
+.search__btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 0 10px;
+}
+
+.main .googlelogo {
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.main .search input[type="submit"] {
+  font-size: 10px;
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 14px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1); /* Add box shadow instead of border */
+  width: 90vw;
+  height: 50px;
+}
+
+.main .search {
+  font-size: 12px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  width: 90vw;
+  height: 47px;
+  padding: -10px;
+  margin: 0% auto;
+  max-width: 600px;
+  margin-bottom: 8px;
+}
+
+.main .search .btn-group {
+  margin-top: 60px;
+  position: relative;
+}
+
+.main .search .btn-group button {
+  margin-right: 100px; /* Adjust the margin between the buttons */
+  background-color: #e8eaec;
+  border: 1px solid #e8eaec;
+  border-radius: 4px;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.main .search .btn-group .microphone,
+.main .search .btn-group .search-icon {
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main .search .btn-group .microphone {
+  left: 10px;
+}
+
+.main .search .btn-group .search-icon {
+  right: 10px;
+}
+
+.main .search .btn-group .microphone,
+.main .search .btn-group .search-icon {
+  margin-right: 10px; /* Add spacing between the two icons */
+}
